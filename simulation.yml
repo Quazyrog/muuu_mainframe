@@ -1,0 +1,20 @@
+quiet: False
+start_time: 1994-09-13
+end_time: 2022-01-01
+mainframes_timeline: GA_Dates.csv
+players:
+- ai: SIMPLE_MARKOV
+  ai_params:
+    renew_probability: 0.6
+    buy_first_probability: 0.7
+    max_stagnancy: 3
+  ncopies: 0
+- ai: GROWING_MARKOV
+  ai_params:
+    p_engage: 0.002
+    p_grow: 0.1
+    p_renew: 0.1
+    p_resign: 0.4
+    init_size: 3
+    growth: 2
+  ncopies: 500
